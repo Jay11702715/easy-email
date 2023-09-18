@@ -518,7 +518,7 @@ export default function Editor() {
         <style>{themeStyleText}</style>
         <EmailEditorProvider
           key={id}
-          height={featureEnabled ? 'calc(100vh - 128px)' : 'calc(100vh - 68px)'}
+          height={featureEnabled ? 'calc(100vh - 195px)' : 'calc(100vh - 68px)'}
           data={initialValues}
           // interactiveStyle={{
           //   hoverColor: '#78A349',
