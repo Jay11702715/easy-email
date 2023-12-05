@@ -3,13 +3,10 @@ import { extract, translate } from 'easy-localized-translation';
 import * as fs from 'fs-extra';
 import * as dotenv from 'dotenv';
 import path from 'path';
-
 const overwriteData = fs.readJsonSync(
   path.join(process.cwd(), 'packages/easy-email-localization/locales/overwrite.json'),
 );
-
 const config = dotenv.config();
-
 async function main() {
   const packagesWords = extract({
     path: 'packages',
